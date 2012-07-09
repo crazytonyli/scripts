@@ -61,7 +61,7 @@ class Property
             ret = "[aDecoder decodeObjectForKey:@\"#{@name}\"]; #{WARNING}"
         end
 
-        return ret
+        return "self.#{@name} = #{ret}"
     end
 
 end
